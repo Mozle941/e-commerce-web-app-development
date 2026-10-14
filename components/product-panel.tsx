@@ -30,7 +30,7 @@ export function ProductPanel({
           fill
           priority
           sizes="(min-width: 1024px) 33vw, 100vw"
-          className="object-cover"
+          className="neon-glow object-cover"
         />
         <span className="absolute top-4 left-4 rounded-full border border-white/10 bg-black/40 px-2.5 py-1 font-mono text-[11px] text-muted-foreground backdrop-blur">
           New · Gen 2

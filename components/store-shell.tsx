@@ -7,6 +7,7 @@ import { SiteHeader } from '@/components/site-header'
 import { HeroPanel } from '@/components/hero-panel'
 import { ProductPanel } from '@/components/product-panel'
 import { CheckoutPanel } from '@/components/checkout-panel'
+import { TestimonialsSection } from '@/components/testimonials-section'
 
 export type View = 'home' | 'product' | 'checkout'
 
@@ -27,10 +28,11 @@ export function StoreShell() {
     cn('min-h-0 lg:flex', view === panel ? 'flex' : 'hidden')
 
   return (
-    <div className="mx-auto flex h-full max-w-[1440px] flex-col px-4 lg:px-6">
+    <div className="mx-auto flex max-w-[1440px] flex-col px-4 lg:px-6">
       <SiteHeader view={view} onNavigate={setView} quantity={checkoutActive ? quantity : 0} />
 
-      <main className="grid min-h-0 flex-1 grid-cols-1 gap-4 pb-4 lg:grid-cols-[1.15fr_1fr_0.95fr] lg:pb-6">
+      <main className="flex flex-col gap-4 pb-4 lg:gap-6 lg:pb-6">
+      <div className="grid h-[calc(100dvh-4.5rem)] grid-cols-1 gap-4 lg:h-[calc(100dvh-5.5rem)] lg:grid-cols-[1.15fr_1fr_0.95fr]">
         <section aria-labelledby="hero-title" className={panelClass('home')}>
           <HeroPanel onShop={() => setView('product')} onBuy={handleBuyNow} />
         </section>
@@ -53,6 +55,9 @@ export function StoreShell() {
             highlighted={checkoutActive}
           />
         </section>
+      </div>
+
+        <TestimonialsSection />
       </main>
     </div>
   )
