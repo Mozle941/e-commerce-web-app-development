@@ -15,7 +15,11 @@ export function HeroPanel({
   onBuy: () => void
 }) {
   return (
-    <div className="flex w-full flex-col justify-between gap-6 py-2 lg:py-6 lg:pr-6">
+    <div className="neon-ring relative isolate flex w-full flex-col justify-between gap-6 overflow-hidden rounded-3xl bg-black p-6 text-white lg:p-8">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(34,211,238,0.28),transparent_45%),radial-gradient(circle_at_90%_85%,rgba(217,70,239,0.3),transparent_50%),linear-gradient(160deg,rgba(0,0,0,0)_30%,rgba(0,0,0,0.85))]"
+      />
       <div className="flex flex-col gap-5">
         <p className="flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-[11px] tracking-wider text-muted-foreground uppercase backdrop-blur">
           <span className="size-1.5 rounded-full bg-emerald-400" aria-hidden="true" />
@@ -23,11 +27,11 @@ export function HeroPanel({
         </p>
         <h1
           id="hero-title"
-          className="text-4xl leading-[1.02] font-semibold tracking-tighter text-balance sm:text-5xl xl:text-6xl"
+          className="neon-text text-4xl leading-[1.02] font-semibold tracking-tighter text-balance sm:text-5xl xl:text-6xl"
         >
           Welcome to My Store
         </h1>
-        <p className="max-w-md text-sm leading-relaxed text-pretty text-muted-foreground lg:text-base">
+        <p className="max-w-md text-sm leading-relaxed text-pretty text-white/80 lg:text-base">
           Lune One reads your surroundings 48,000 times a second and cancels
           the noise before you notice it. Nothing between you and the work.
         </p>

@@ -155,6 +155,26 @@
   }
 }
 
+@utility neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 6px rgb(255 255 255 / 0.6),
+    0 0 18px rgb(34 211 238 / 0.7),
+    0 0 42px rgb(217 70 239 / 0.55);
+}
+
+@utility neon-glow {
+  filter: drop-shadow(0 0 10px rgb(34 211 238 / 0.55))
+    drop-shadow(0 0 28px rgb(217 70 239 / 0.4));
+}
+
+@utility neon-ring {
+  box-shadow:
+    0 0 0 1px rgb(34 211 238 / 0.45),
+    0 0 24px rgb(34 211 238 / 0.25),
+    0 0 48px rgb(217 70 239 / 0.2);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -3,7 +3,7 @@ const layerBase =
 
 export function AuraBackground({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative h-dvh overflow-hidden">
+    <div className="relative min-h-dvh overflow-hidden">
       <div
         aria-hidden="true"
         className={`${layerBase} mix-blend-screen blur-[175px] md:blur-[252px]`}
@@ -36,7 +36,7 @@ export function AuraBackground({ children }: { children: React.ReactNode }) {
             'radial-gradient(circle at 30% 70%, rgba(255,255,255,0.15) 0%, transparent 30%)',
         }}
       />
-      <div className="relative z-10 h-full">{children}</div>
+      <div className="relative z-10">{children}</div>
     </div>
   )
 }
