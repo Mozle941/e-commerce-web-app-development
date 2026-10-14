@@ -25,7 +25,7 @@ export function HeroPanel({
           id="hero-title"
           className="text-4xl leading-[1.02] font-semibold tracking-tighter text-balance sm:text-5xl xl:text-6xl"
         >
-          Silence, engineered for deep work.
+          Welcome to My Store
         </h1>
         <p className="max-w-md text-sm leading-relaxed text-pretty text-muted-foreground lg:text-base">
           Lune One reads your surroundings 48,000 times a second and cancels
