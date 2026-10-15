@@ -48,7 +48,7 @@ Open `http://localhost:3000`.
 | Resource | URL |
 |---|---|
 | Project documentation | https://nextwork.ai/mos-dev/docs/065fd851-4e5d-5bd2-828b-d653483d86a9 |
-| Deployed site | `<add Vercel URL>` |
+| Deployed site | https://e-commerce-web-app-development-alpha.vercel.app/ |
 
 ## Author
 
